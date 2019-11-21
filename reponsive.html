@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/logo.ico" width="20">
+    <title>julbay.com</title>
+    
+    <style>
+    
+     *{
+        box-sizing: border-box;
+    }
+        
+        body{
+            background-color: #c33a89;
+        }
+        
+        
+        
+        
+        
+    .row::after{
+        content: "";
+        clear: both;
+        display: block;
+        
+    }
+    
+    [class*="col-"]{
+        float: left;
+        padding: 18px;
+    }
+        
+      html{
+        font-family: "Lucida Sans", sans-serif;
+    } 
+        
+        img{
+            max-width: 100%;
+        }
+        
+        .row{
+           margin-top: 80px;
+        } 
+        
+        
+  
+        @media only screen and (min-width:768px){
+                  .header{
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    left: 0;
+    top: 0;
+    margin-bottom: 60px;
+   
+}
+        }  
+        
+        
+        
+        
+        .header{
+            background-color: blueviolet;
+            color: white;
+            padding: 15px;
+        }
+        
+        .menu ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu li{
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: cadetblue;
+            color: white;
+        }
+        
+        
+           .menu li:hover{
+            background-color: chartreuse;
+               color: black;
+              border-radius: 50px;;
+        }
+        
+        
+        .aside{
+            background-color: cadetblue;
+          padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+          
+        }
+        
+        .footer{
+         background-color: cadetblue;
+            text-align: center;
+         
+            padding: 14px;
+          
+          
+        }
+        
+        /*para PC*/
+        
+        .col-1{width: 6.25%; }
+        
+        
+         .col-2{width: 12.5%; }
+        
+         .col-3{width: 18.75%; }
+        
+        
+         .col-4{width: 25%; }
+    
+         .col-5{width: 31.25%; }
+        
+         .col-6{width: 37.5%; }
+        
+         .col-7{width: 43.75%; }
+        
+         .col-8{width: 50%; }
+    
+         .col-9{width: 56.25%; }
+         
+         .col-10{width: 62.5%; }
+        
+         .col-11{width: 68.75%; }
+        
+         .col-12{width: 75%; }
+         .col-13{width: 81.25%; }
+        
+         .col-14{width: 87.5%; }
+        
+         .col-15{width: 93.75%; }
+         .col-16{width: 100%; }
+        
+        /* para telefono*/
+        
+        @media only screen and (max-width:768px){
+            [class*="col-"]  {
+                width: 100%;
+            }
+        }
+        
+         .lista-producto li{
+ float: left;
+ width: 50%;
+
+   
+    
+}
+
+ @media only screen and (min-width:768px){
+              .lista-producto li{
+            width: 33.3%;
+        }
+ }
+        
+        
+
+        .sitio-header {
+            width: 100%;
+            height: 1200px;
+            border: 1px solid #000;
+            background-color: #ed6969;
+        }     
+   
+       @media only screen and (min-width:600px){
+              .lista-producto li{
+            width: 33.3%;
+        }
+ }
+        
+        
+
+        .sitio-header {
+            width: 100%;
+            height: 1200px;
+            border: 1px solid #000;
+            background-color: #ed6969;
+        }     
+     
+        
+        
+        
+.lista,  .ejemplo {
+    
+    list-style: none;
+   
+}
+
+.lista,  .ejemplo {
+ border: 0 1px 0 1px  solid #000;
+   
+    margin-top: 25px;
+}
+
+.lista-producto{
+    margin-top: 15px;
+  
+  
+    padding: 0;
+}
+
+        
+        @media only screen and (max-width:576px){
+            .ejemplo{
+                display: none;
+            }
+        }  
+        
+        
+        
+          @media only screen and (min-width:600px){
+            .ejemplo{
+                display: block;
+            }
+        }  
+        
+        
+        
+        
+        
+        .header{
+             display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+  
+        }
+        
+        
+          
+        
+        
+        .header{
+             display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+  
+        }
+        
+        
+        .header{
+         padding-left: 70px;
+        }
+        
+        
+        
+        @media only screen and (max-width:576px){
+    .header{
+     text-align: center;
+                 
+                  display: block;
+                  flex-direction: column;
+                  flex-shrink: 2;
+                 
+                  
+              }
+      
+}
+        
+       @media only screen and (min-width:600px){
+   /* .header{
+     text-align: center;
+                 
+                  display: block;
+                  flex-direction: column;
+                  flex-shrink: 2;
+                 
+                  
+              }
+      
+}  */
+            
+        
+        
+        
+        
+        
+        form, .image{
+            padding-top: 18px;
+        }
+
+        form input{
+             margin-left: -18em;
+    min-width: 600px;
+    min-height: 35px;
+    padding-top: 3px;
+        }
+        
+   .boton{
+            display: inline-block;
+            padding-top: 2px;
+            min-height: 35px;
+        }
+        
+        
+        
+        
+     @media only screen and (max-width:576px){
+           form input{
+                 margin: auto;
+          
+    min-width: 200px;
+    min-height: 35px;
+    padding-top: 3px;
+        }
+            
+            
+             .image{
+           display: none;
+               
+        }
+
+            
+        }
+     
+ 
+   
+        
+     
+        
+        
+       /*foto slide*/
+        
+      
+        .slider{
+            width: 354px;
+            height: 341px;
+           background: url(foto/img/9.jpg);
+            margin: auto; 
+            animation: slider 30s infinite
+        }
+        
+           @media only screen and (max-width:576px){
+             .slider{
+            width: 254px;
+            height: 241px;
+           background: url(foto/img/9.jpg);
+            margin: auto; 
+            animation: slider 30s infinite
+        }
+            
+            
+            
+            
+        } 
+            
+        
+        @keyframes slider{
+            25%{
+                background: url(foto/img/adida.jpg); 
+            }
+            
+             50%{
+                background: url(foto/img/vans3.jpg); 
+            }
+            
+             75%{
+                background: url(foto/img/12.jpg);
+            }
+            
+            100%{
+                background: url(foto/img/9.jpg); 
+            } 
+              
+            
+        }
+        
+        
+        
+        
+        
+    
+        .inicio{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background: #4b4be3;
+    margin-top: 20px;
+
+   
+}
+
+.inicio h2{
+    padding: 15px;
+}
+
+.sitio-footer{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    background-color: #3f4b52;
+    color: #fff;
+    justify-content: center;
+}
+
+.sitio-footer li{
+  
+    text-decoration: none;
+  
+
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+   
+   
+}
+
+
+
+.list{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    text-justify: auto;
+    margin: 20px;
+    color: skyblue;
+}
+        
+        
+        
+        @media only screen and (min-width:768px){
+            .listo{
+                display: none;
+            } 
+        }
+        
+        
+          @media only screen and (min-width:600px){
+            .listo{
+                display: none;
+            } 
+        }    
+        
+
+ @media only screen and (max-width:576px){
+    .list{
+        display: none;
+        flex-direction: column;
+       
+    }
+     
+     
+     .listo{
+       list-style: none;
+       padding-top: 10px;
+         flex-direction: column; 
+         
+         cursor: pointer;
+     }
+}
+        
+        
+
+
+
+
+.header-lista a:hover{
+    color: red;
+}  
+        
+      
+        
+    </style>
+</head>
+<body>
+   
+    <div class="header">
+      <a href=""><img src="foto/img/coollogo_com-179231117.png" width=""  height="80"alt=""> </a> 
+    
+       <form action="">
+       <input type="search"  placeholder="Buscar...">
+       <button class="boton"> <img src="img/buscar.png" width="15" alt=""> <span style="color: #fff;">Buscar</span> </button>
+       
+       </form>
+         <div class="image">
+           <img src="img/carrote.png" width="60" alt="">
+       </div>
+     
+   
+  </div>
+  
+   <div class="row">
+       
+       <div class="col-4  menu">
+       <ul>
+           <li>sneaker/tenis</li>
+           <li>Tshirt</li>
+           <li>jeans/pantalones</li>
+           <li>ropas para todos</li>
+       </ul>
+   </div>
+   
+   <div class="col-8">
+            
+       <div class="sitio-header">
+        
+          <div class="contenido">
+          
+          <ul class="lista-producto">
+              <li class="lista">
+                 <a href="adida.html"><img src="img/1.jpg" width="354" height="341" alt=""></a> 
+               
+              </li>
+              
+              <li class="lista">
+                  <img src="img/2.jpg" width="354" height="341" alt="">
+                 
+              </li>
+              
+               <li class="lista">
+                  <img src="img/3.jpg" width="354" height="341" alt="">
+                  
+              </li>
+              
+              
+              
+          </ul>
+          
+           <ul class="lista-producto">
+              <li class="lista">
+                 <a href="nike.html"><img src="img/nike.jpg" width="354" height="341" alt="">
+                
+                  </a> 
+              </li>
+              
+              <li class="lista">
+                <a href="vans.html"><img src="img/vons.jpg"  width="354" height="341" alt=""></a> 
+                 
+              </li>
+              
+               <li class="lista">
+                  <img src="img/adida.jpg" width="354" height="341" alt="">
+                  
+              </li>
+              
+              
+              
+          </ul>
+          <div class="ejemplo">
+           <ul class="lista-producto">
+              <li class="lista">
+                  <img src="img/mujer.jpg" width="354" height="341" alt="">
+              
+              </li>
+              
+              <li class="lista">
+                  <img src="img/mujer2_.jpg" width="354" height="341" alt="">
+                
+              </li>
+              
+               
+              
+               <li class="lista">
+                 
+                 <img src="img/hombre.jpg" width="354" height="341" alt="">
+                 
+              </li>
+              
+              
+          </ul>
+          </div>
+              </div>
+         
+        </div>
+   </div>
+   
+   <div class="col-4 right">
+       <div class="aside">
+          <h2>Visitas nuestras Ofertas</h2>
+           <div class="slider"></div>
+           
+       </div>
+   </div>
+    
+     
+       
+   </div>
+   
+     <div class="footer">
+        
+           <footer class="sitio-footer">
+     
+     <div class="inicio">
+         <h2>Pagina de Inicio</h2>
+     </div>
+     <div class="header-lista">
+     
+      <ul class="list">
+           <li>Conocenos 
+           <h4>Trabaja en Julbay</h4>
+           <h4>Blog</h4>
+           <h3>Nuestros pruductos</h3>
+           
+           <h4>compra y Vende Online</h4>
+           
+           </li>
+           
+           
+           <li>Gana dinero con Nosotros
+           
+           <h4>Trabaja en Julbay</h4>
+           <h4>Blog</h4>
+           <h4>Nuestros pruductos</h4>
+           
+           <h4>compra y Vende Online</h4>
+           
+           
+          </li>
+           
+           <li>Mejores Ofertas
+           
+           <h4>Trabaja en Julbay</h4>
+           <h4>Blog</h4>
+           <h4>Nuestros pruductos</h4>
+           
+           <h4>compra y Vende Online</h4>
+           
+           
+           </li>
+           <li>Producto Julbay
+           
+           <h4>Trabaja en Julbay</h4>
+           <h4>Blog</h4>
+           <h4>Nuestros pruductos</h4>
+           
+           <h4>compra y Vende Online</h4>
+           
+           
+          </li>
+          
+        
+          
+       </ul>
+       
+       <ul class="listo">
+           
+          <li>Conocenos</li>
+          <li>Producto Julbay</li>
+          <li>Mejores Ofertas</li>
+          <li>Blog</li> 
+           
+           
+           
+       </ul>
+      
+       </div>
+       
+       
+       
+       
+   </footer>
+        
+         
+       </div>
+       
+   
+   
+   
+   
+   
+   
+   
+    
+</body>
+</html>
